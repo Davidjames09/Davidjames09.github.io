@@ -1,13 +1,13 @@
-body, h1, h2, p, form {
+body, h1, p, form, textarea, input {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-header {
+header, footer {
     background-color: #f4f4f4;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 nav ul {
@@ -45,7 +45,7 @@ form > * {
 }
 
 input, textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
 }
 
@@ -55,4 +55,15 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.about-me img {
+    float: left;
+    margin-right: 20px;
+    width: 150px; /* Adjust based on your image */
+    height: auto;
+}
+
+.bio {
+    overflow: hidden; /* Clear the float */
 }
