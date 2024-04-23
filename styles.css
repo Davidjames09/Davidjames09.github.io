@@ -1,96 +1,50 @@
-/* Basic resets, typography, and box-sizing for better responsiveness */
-body, h1, p, form, textarea, input, button {
+body, h1, p, form, textarea, input {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Header and Footer Styling */
 header, footer {
-    background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
-    width: 100%;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 20px;
 }
 
-a {
+nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-/* Main content Styling */
 main {
     padding: 20px;
-    margin-bottom: 60px; /* Avoid overlap with fixed footer */
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
-/* Form and Input Field Styling */
-form > * {
-    display: block;
-    margin: 10px auto; /* Center form elements */
-    width: 90%; /* Adjust width for better responsiveness */
-    max-width: 500px; /* Maximum width of form elements */
+.professional-summary, .selected-accomplishments, .featured-projects {
+    margin-bottom: 20px;
 }
 
-input, textarea {
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 10px;
 }
 
-button {
-    display: block; /* Ensures the button is block-level to fill container width */
-    width: 50%;
-    margin: 10px auto; /* Center the button */
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
+.professional-summary p, .selected-accomplishments ul, .featured-projects .project p {
+    color: #626D78;
 }
 
-/* Image styling for about section */
-.about-me img {
-    float: left;
-    margin-right: 20px;
-    width: 150px;
-    height: auto;
-}
-
-.bio {
-    overflow: hidden; /* Clear the float for bio text */
-    padding: 0 20px; /* Add padding around the text for better readability */
-}
-
-@media (max-width: 768px) {
-    .about-me img {
-        float: none;
-        display: block;
-        margin: 0 auto; /* Center image on smaller screens */
-    }
-
-    nav ul li {
-        display: block; /* Stack nav items vertically on smaller screens */
-        margin: 10px 0; /* Adjust margin for vertical stacking */
-    }
-}
+.featured-projects .project img {
+    margin-bottom: 10px;
