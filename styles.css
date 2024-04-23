@@ -1,15 +1,27 @@
+/* Basic resets and typography */
 body, h1, p, form, textarea, input {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Header and Footer Styling */
 header, footer {
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
 }
 
+footer {
+    background-color: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+}
+
+/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -25,20 +37,12 @@ a {
     color: black;
 }
 
+/* Main content Styling */
 main {
     padding: 20px;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+/* Form and Input Field Styling */
 form > * {
     display: block;
     margin: 10px 0;
@@ -57,6 +61,7 @@ button {
     cursor: pointer;
 }
 
+/* Styling for .about-me section */
 .about-me img {
     float: left;
     margin-right: 20px;
